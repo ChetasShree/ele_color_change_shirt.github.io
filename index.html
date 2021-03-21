@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (function (w, d) {
+        w.CollectId = "601eeee68255d2479d7335c5";
+        var h = d.head || d.getElementsByTagName("head")[0];
+        var s = d.createElement("script");
+        s.setAttribute("type", "text/javascript");
+        s.async = true;
+        s.setAttribute("src", "https://collectcdn.com/launcher.js");
+        h.appendChild(s);
+      })(window, document);
+    </script>
+  </head>
+  <header> 
+    <label id="dark-change"></label>
+  </header>
+
+  <body>
+    <!-- !Navbar -->
+
+    <div class="navbar navbar-expand-lg navbar-dark px-5">
+      <a href="#home" class="navbar-brand">B2<span class="me">Me</span></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#myNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#featured" class="nav-link">Featured</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#gallery" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#tour" class="nav-link">Tour</a>
+          </li>
+        </ul>
+        <div class="d-none d-lg-flex align-items-baseline">
+          <!-- <p class="text-white">
+            <span class="mx-2 phone-icon">
+              <i class="fas fa fa-phone fa-fw"></i>
+            </span>
+            +987456123
+          </p> -->
+          <a href="home.html"
+            ><button class="btn green-btn text-capitalize">Developer</button></a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- !Main Part -->
+    <div class="container">
+      <div class="row">
+        <!-- !Colour Changing Part -->
+        <div
+          class="col-11 col-sm-11 col-md-11 col-lg-6 prod-image colorizing-wrapper d-flex align-items-center"
+        >
+          <input
+            type="color"
+            value="#0000ff"
+            class="colorizing-wrapper__input"
+          />
+          <img
+            src="shirt.jpg"
+            alt=""
+            class="colorizing-wrapper__img"
+            <!-- width="90px"
+            height="400px" -->
+          />
+        </div>
+        <div class="col-11 col-sm-11 col-md-11 col-lg-6 info">
+          <p class="new_arriv text-center">NEW</p>
+
+          <h2>Men's T Shirts V Neck Blue Color</h2>
+
+          <h6 class="pad">
+            By clicking an image a color selector will appear and you can change
+            image's color.
+          </h6>
+
+          <p class="pad">Product Code:ISRC456169</p>
+          <!-- <img src="img3.jpg" class="stars" alt="" width="25" height="30" /> -->
+          <h3 class="price"><b>Price: ₹ 280</b></h3>
+
+          <p class="pad"><b>Availibility: </b>Hurry Up! Last 2 item LEFT</p>
+
+          <p class="pad"><b>Brand:</b>Nike</p>
+
+          <p class="pad"><b>Payment:</b>COD available</p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var content = document.getElementsByTagName('body')[0];
+      var darkMode = document.getElementById('dark-change');
+      darkMode.addEventListener('click',function(){
+        darkMode.classList.toggle('active');
+        content.classList.toggle('night');
+      })
+    </script>
+  </body>
+</html>
